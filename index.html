@@ -56,13 +56,52 @@
           </div>
     </div>
     <script>
+
       // alert("Olá Mundo!")
       // Exemplo de log's
-      // console.log(`Olá mundo`)
+      console.log(`Olá mundo!`)
 
-      // let nunmero = 8
-      // console.log(nunmero)
-      // console.log(typeof nunmero)
-    </script>
+      // function cartao(parametro, parametro_2, parametro_3) {
+
+      //     let resultado = parametro + parametro_2 + parametro_3;
+
+      //     resultado = resultado + resultado;
+
+      //     return resultado;
+      // }
+
+      // const usuario = {
+      //     nome: "Ana",
+      //     email: "email@hotmail.com",
+      //     debito: cartao(10, 20, 30),
+      //     dependente: (nome, email) => {
+      //         return {
+      //             nome: nome,
+      //             email: email,
+      //             chico_zinho: () => {
+      //                 return {
+      //                     carro: "BMW",
+      //                     teste: () => {
+      //                         return "OK"
+      //                     }
+      //                 }
+      //             }
+      //         }
+      //     }
+      // }
+
+      let numero = 8
+      console.log(numero)
+      console.log(typeof numero)
+      // 
+
+      document.getElementById("CEP").addEventListener("blur", () => {
+
+          const CEP = document.getElementById("CEP").value;
+          alert(CEP);
+          document.getElementById("uf").value = "PA";
+      })
+
+  </script>
 </body>
 </html>
