@@ -57,49 +57,40 @@
     </div>
     <script>
 
-      // alert("Olá Mundo!")
-      // Exemplo de log's
-      console.log(`Olá mundo!`)
+      const input_CEP = document.getElementById("cepInput");
 
-      // function cartao(parametro, parametro_2, parametro_3) {
+      input_CEP.addEventListener("blur", () => {
 
-      //     let resultado = parametro + parametro_2 + parametro_3;
+//          const CEP = document.getElementById("cepInput");
+//          CEP.value = "01001-000";
 
-      //     resultado = resultado + resultado;
+          const LOGRADOURO = document.getElementById("logradouroInput");
+          LOGRADOURO.value = "Praça da Sé";
 
-      //     return resultado;
-      // }
+          const COMPLEMENTO = document.getElementById("complementoInput");
+          COMPLEMENTO.value = "lado ímpar";
 
-      // const usuario = {
-      //     nome: "Ana",
-      //     email: "email@hotmail.com",
-      //     debito: cartao(10, 20, 30),
-      //     dependente: (nome, email) => {
-      //         return {
-      //             nome: nome,
-      //             email: email,
-      //             chico_zinho: () => {
-      //                 return {
-      //                     carro: "BMW",
-      //                     teste: () => {
-      //                         return "OK"
-      //                     }
-      //                 }
-      //             }
-      //         }
-      //     }
-      // }
+          const BAIRRO = document.getElementById("bairroInput");
+          BAIRRO.value = "Sé";
 
-      let numero = 8
-      console.log(numero)
-      console.log(typeof numero)
-      // 
+          const CIDADE = document.getElementById("cidadeInput");
+          CIDADE.value = "São Paulo";
 
-      document.getElementById("CEP").addEventListener("blur", () => {
+          const UF = document.getElementById("ufInput");
+          UF.value = "SP";
 
-          const CEP = document.getElementById("CEP").value;
-          alert(CEP);
-          document.getElementById("uf").value = "PA";
+  // "cep": "01001-000",
+  // "logradouro": "Praça da Sé",
+  // "complemento": "lado ímpar",
+  // "bairro": "Sé",
+  // "localidade": "São Paulo",
+  // "uf": "SP",
+
+          // Exemplo de consulta de um API
+        /*
+        let response = await fetch("https://viacep.com.br/ws/60110480/json/");
+        let movies = await response.json();
+        */
       })
 
   </script>
